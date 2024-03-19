@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-propeties</title>
+    <style>
+    .b{
+        width:50%;
+        border:2px solid yellow;
+        margin:0 auto;
+    }
+
+    .b h1{
+        color:burlywood;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+        color:black;
+        color:aquamarine
+    }
+
+    li:hover{
+        background-color: blue;
+        color:aqua;
+    }
+    ul{
+        background-color: blueviolet;
+        height:50px;
+    }
+
+    li{
+    
+        display:inline-block;
+        height:50px;
+        padding: 0px 50px;
+        line-height: 50px;
+    }
+
+    #aaa{
+        visibility: hidden;
+    }
+
+    .block-container{
+       height:300px;
+       width:500px;
+       border:2px solid yellow;
+       margin-top: 30px;
+       color:grey;
+       background-color: blue;
+       display:inline;
+    }
+    h1{
+        background-color:orange;
+    }
+
+    p{
+        background-color:cornflowerblue;
+    }
+
+    span{
+        height:50px;
+        width:90px;
+        background-color: hotpink;
+        display: inline-block;
+        padding:20px;
+    }
+
+    #para-1{
+       visibility: hidden;
+    }
+
+    b{
+        display: none;
+    }
+
+
+    </style>
+</head>
+<body>
+    <!--display properties
+        1.inline (span, a,b,i,em,img)
+        2.block(h1-h6,div,footer,p,form,form)
+        3.inline-block
+        4.none
+        5.visibility:hidden
+    -->
+
+    <div class="b">
+        <h1>display property</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li id="aaa"><a href="#">About</a></li>
+            <li><a href="#">contact</a></li>
+            <li id="fff"><a href="#">menu</a></li>
+        </ul>
+    </div>
+
+    <div class="block-container">
+       <h1>block level elements</h1>
+       <p id="para1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos pariatur repellendus aperiam tempora, cum accusamus labore et praesentium aliquid commodi officia vel, dicta obcaecati amet corrupti nulla nobis blanditiis illum.
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet consectetur, <b>adipisicing elit</b>. Explicabo voluptate at, illum eum facilis cumque molestiae odit animi voluptatem, soluta facere repudiandae eligendi. Dolores pariatur veritatis saepe vitae laborum sed.
+        <span>hello</span>
+       </p>
+    </div>
+    <span>hello</span>
+</body>
+</html>
+
+

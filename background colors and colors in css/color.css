@@ -1,0 +1,22 @@
+#first h1{
+    height:100px;
+    width:100px;
+    background-color:#00FF00;
+    color:#F9E79F;
+}
+
+
+#element-1{
+    background-color:hsl(48, 89%, 70%);
+    color:hsl(184, 9%, 77%);
+    height:100px;
+    width:100px;
+    font-size: 30px;
+    width:100%;
+}
+/* 
+
+rgba 
+hexadecimal# 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+hsa= hue saturation
+ */
