@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaqueries</title>
+    <style>
+        body{
+            background-color: blue;
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            width:90%;
+        
+        }
+        #header-container>h1{
+             color:aqua;
+             text-align:center;
+             background-color: brown;
+             font-weight: bold;
+             width:40%;
+             margin-left:25%;
+            
+        }
+
+        .paragraph-container2{
+          background-color:lightblue;
+          width:90%;
+          color: brown;
+          text-transform: uppercase;
+          font-size: large;
+          margin-left:60px;
+          display: inline-block;
+        }
+
+        @media  screen and (max-width:600px) {
+            body{
+                background-color:crimson;
+            }
+            
+        .paragraph-container2{
+          background-color:lightblue;
+          min-width:80%;
+          color:blue;
+          text-transform: lowercase;
+          font-size: large;
+          padding: 20px;
+          margin: 20px 20px;
+        }
+        #header-container>h1{
+             color:aqua;
+             text-align:center;
+             background-color:lightseagreen;
+             font-weight: bold;
+             min-width:60%;
+
+        }
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header-container">
+      <h1>mediaqueries</h1>
+    </div>
+    <div class="paragraph-container2">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloremque quas quae tenetur enim? Saepe qui quibusdam quasi veritatis aut reprehenderit. Blanditiis saepe expedita distinctio consectetur cum vel, laboriosam laudantium.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in beatae odit ab a nisi velit, nemo hic error blanditiis, maiores magnam, atque officia. Ducimus voluptatibus modi cupiditate natus molestiae!</p>
+    </div>
+
+    <div class="paragraph-container2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloremque quas quae tenetur enim? Saepe qui quibusdam quasi veritatis aut reprehenderit. Blanditiis saepe expedita distinctio consectetur cum vel, laboriosam laudantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in beatae odit ab a nisi velit, nemo hic error blanditiis, maiores magnam, atque officia. Ducimus voluptatibus modi cupiditate natus molestiae!</p>
+     </div>
+     
+    
+</body>
+</html>

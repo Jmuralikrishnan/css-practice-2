@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flex children properties</title>
+    <style>
+
+        .parent-container{
+            height:100vh;
+            width:70%;
+            border:2px solid burlywood;
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .parent-container>.child1{
+            height: 100px;
+            width:100px;
+            background-color: coral;
+            color:white;
+            order:0;
+            /* flex-grow: 1; */
+            flex-shrink: 3;
+            align-self: flex-end;
+        }
+        .parent-container>.child2{
+            height: 100px;
+            width:100px;
+            background-color: blue;
+            color:white;
+            order: 0;
+            /* flex-grow: 2; */
+            flex-shrink: 3;
+        }
+
+        .parent-container>.child3{
+            height: 100px;
+            width:100px;
+            background-color:grey;
+            color:white;
+            order:0;
+            flex-shrink: 3;
+            align-self:center;
+            /* flex-grow: 2; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+        <!-- <div class="child1">1</div> -->
+        <!-- <div class="child2">2</div> -->
+        <!-- <div class="child3">3</div> -->
+        <!-- <div class="child2">2</div> -->
+        <!-- <div class="child3">3</div> -->
+    </div>
+</body>
+</html>

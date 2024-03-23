@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+         .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:565px;
+            background:linear-gradient(to right, blue, yellow, grey);
+         }
+
+         .container>div{
+            background-color: #f1f1f1;
+            width:400px;
+            height:300px;
+            padding:80px;
+            border:2px solid black;
+            border-radius: 10px;
+         }
+         .form-container h1{
+            text-align:center;
+            color:blue;
+            text-shadow: 4px 4px 2px yellow;
+         }
+
+         
+         .form-container label{
+            text-transform: capitalize;
+            color:grey;
+            position: relative;
+            bottom: 5px;
+         }
+
+        .form-container input[type=text]{
+            border:2px solid gainsboro;
+            width: 85%;
+            padding: 8px 14px;
+            position: relative;
+            bottom:5px;
+            color:blue;
+            font-size: 16px;
+            border-radius: 4px;
+
+        }
+
+        .form-container input[type=password]{
+            border:2px solid gainsboro;
+            width: 85%;
+            padding: 8px 14px;
+            position: relative;
+            bottom:5px;
+            color:blue;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .form-container input[type=email]{
+            border:2px solid gainsboro;
+            width: 85%;
+            padding: 8px 14px;
+            position: relative;
+            bottom:5px;
+            color:blue;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .form-container input[type=submit]{
+            padding:10px 10px;
+            width:75%;
+            background-color:green;
+            margin-top:10px;
+            font-size:1rem;
+            font-weight: bolder;
+            color:white;
+            border:none;
+            position: relative;
+            left:30px;
+            border-radius: 5px;
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>sign in</h1>
+            <form>
+                <div>
+                  <label for="name">username</label>
+                  <input type="text" placeholder="enter your username"><br><br>
+                </div>
+                <div>
+                  <label for="name">password</label>
+                  <input type="password" placeholder="password"><br><br>
+                </div>
+                <div>
+                  <label for="email">email</label><br>
+                  <input type="email" placeholder="enter your email"><br>
+                </div>
+                <input type="submit"  value="submit">
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

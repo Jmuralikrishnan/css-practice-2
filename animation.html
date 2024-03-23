@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        #container{
+            width:100px;
+            height:100px;
+            background-color: red;
+            animation:myfirst 5s linear 2s 2 alternate;
+            position:relative;
+
+        }
+
+        h1{
+            color:white;
+            background-color: blue;
+            text-align: center;
+        }
+
+        @keyframes myfirst{
+            0%{
+                background-color: blue;
+                left:0px;
+                top:0px;
+            }
+            25%{
+                background-color: brown;
+                left:300px;
+                top:0px;
+            }
+            50%{
+                background-color: green;
+                left:300px;
+                top:300px;
+            }
+            75%{
+                background-color: blueviolet;
+                left:0px;
+                top:300px;
+            }
+            100%{
+                background-color: darkgray;
+                left:0px;
+                top:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>css animation </h1>
+    <div id="container"></div>
+    
+</body>
+</html>
