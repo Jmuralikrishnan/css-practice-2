@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive images in css</title>
+     <style>
+        .parent-container{
+            display: flex;
+    
+        }
+        .img-container{
+            border:5px solid white;
+            width:400px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: azure;
+
+        }
+        img{
+            width:400px;
+            height:300px;
+        }
+
+        .img-container p{
+            color:burlywood;
+            width:400px;
+            text-transform: uppercase;
+            margin-left: 15px;
+       }
+
+       .img-container-2{
+            border:5px solid white;
+            width:400px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: azure;
+            margin-left: 30px;
+        }
+        img{
+            width:400px;
+            height:300px;
+        }
+
+        .img-container-2 p{
+            color:burlywood;
+            width:400px;
+            text-transform: uppercase;
+       }
+
+       @media only screen and (max-width: 500px) {
+             .parent-container{
+                display: flex;
+                flex-direction: column;
+            }
+        body {
+          background-color: lightblue;
+        }
+
+        .img-container{
+            border: 5px solid blueviolet;
+            height:500px;
+            width:400px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            position: relative;
+            top:30px;
+            left:20px;
+        }
+
+        .img-container img{
+            height:400px;
+        }
+
+        .img-container p{
+            color:blue;
+        }
+
+        .img-container-2{
+            border: 5px solid blueviolet;
+            height:500px;
+            width:400px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            position: relative;
+            top:30px;
+            left:30px;
+            margin-top: 10px;
+        }
+
+        .img-container-2 img{
+            height:400px;
+        }
+
+        .img-container-2 p{
+            color:blue;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+      <div class="img-container">
+       <img src="images/nature.jfif" alt="images" width="400px" height="400px">
+       <p>resize the width browser width and the background image will change at 400px</p>
+     </div>
+     <div class="img-container-2">
+        <img src="images/nature.jfif" alt="images" width="400px" height="400px">
+        <p>resize the width browser width and the background image will change at 400px</p>
+      </div>
+  </div>
+</body>
+</html>
